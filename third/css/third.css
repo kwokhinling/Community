@@ -1,0 +1,19 @@
+path{
+    fill:transparent;
+}
+#test3{
+    animation-name:curve3;
+    animation-delay: 1s;
+    animation-duration: 4s;
+}
+@keyframes curve3{
+    from{
+        
+    }
+    to{
+        
+    }
+}
+
+path{transform:scaleY(-1);
+}
