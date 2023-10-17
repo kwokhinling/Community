@@ -1,6 +1,9 @@
 path{
     fill:transparent;
 }
+a{
+    display:inline-block;
+}
 #test3{
     animation-name:curve3;
     animation-delay: 1s;
@@ -15,5 +18,3 @@ path{
     }
 }
 
-path{transform:scaleY(-1);
-}

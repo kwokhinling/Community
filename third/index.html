@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>template document</title>
         <link rel="stylesheet" href="css/third.css">
+        <script src="js/third.js"></script>
     </head>
     <body>
         <div id="test">
@@ -12,7 +13,10 @@
             <path id="curve" d="M 6 160 C 49.63 103 105.79 46.65 156.2 57.55 C 207.89 68.74 213 141.91 264 160 c 40.67 14.43 108.57 -6.91 229 -145" />
             
             <text width="55">
-              <textPath alignment-baseline="top" xlink:href="#curve">
+            <textPath alignment-baseline="top" xlink:href="#curve" startOffset="50%">
+           
+  
+  <animate attributeName="startOffset" from="-50%" to="150%" begin="0s" dur="10s" repeatCount="indefinite"></animate>
                 Dear visitors, welcome to the largest zoo in the city. We collect most of the animals in the world and ensure that we create a suitable environment for each animal. We hope you and your children can enjoy your visit! When sightseeing, please be sure to abide by the following rules to ensure your safety, otherwise you will be responsible for the consequences.
               </textPath>
             </text>
@@ -25,14 +29,12 @@
             
             <text width="55">
               <textPath alignment-baseline="top" xlink:href="#curve2">
-                Dear visitors, welcome to the largest zoo in the city. We collect most of the animals in the world and ensure that we create a suitable environment for each animal. We hope you and your children can enjoy your visit! When sightseeing, please be sure to abide by the following rules to ensure your safety, otherwise you will be responsible for the consequences.
+                <a href="../index.html">Dear visitors</a>, welcome to the largest zoo in the city. We collect most of the animals in the world and ensure that we create a suitable environment for each animal. We hope you and your children can enjoy your visit! When sightseeing, please be sure to abide by the following rules to ensure your safety, otherwise you will be responsible for the consequences.
               </textPath>
             </text>
           </svg>
           
     </div>
- <div id="test3">
-    Dear visitors, welcome to the largest zoo in the city. We collect most of the animals in the world
- </div>
+ 
     </body>
 </html>
