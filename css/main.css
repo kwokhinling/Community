@@ -1,0 +1,13 @@
+
+
+p,pre{
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.wineglass {
+    transform: rotate(-60deg);
+}
+a :active{
+    color:#E0E33B;
+}
