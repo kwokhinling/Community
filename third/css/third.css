@@ -1,20 +1,24 @@
 path{
     fill:transparent;
 }
-a{
+textpath a{
+    
+    color: #a61d2f;
     display:inline-block;
 }
-#test3{
-    animation-name:curve3;
-    animation-delay: 1s;
-    animation-duration: 4s;
-}
-@keyframes curve3{
-    from{
-        
-    }
-    to{
-        
-    }
-}
 
+
+
+/*<div id="test2">
+<svg viewBox="0 0 500 500">
+    
+    <path id="curve2" d="M 6 16 C 49.63 73 105.79 129.35 156.2 118.45 C 207.89 107.26 213 34.09 264 16 C 304.67 1.57 372.57 22.91 493 161" />
+    
+    <text width="55">
+      <textPath alignment-baseline="top" xlink:href="#curve2">
+        Dear visitors, welcome to the largest zoo in the city. We collect most of the animals in the world and ensure that we create a suitable environment for each animal. <a href="../index.html">Rabbit</a> hope you and your children can enjoy your visit! When sightseeing, please be sure to abide by the following rules to ensure your safety, otherwise you will be responsible for the consequences.
+      </textPath>
+    </text>
+  </svg>
+  */
+  

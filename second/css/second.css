@@ -1,3 +1,6 @@
+.body{
+    background-color: #2F2E2A;
+}
 .chess-board { 
     border-spacing: 0; 
     border-collapse: collapse; 
@@ -5,6 +8,7 @@
 }
 h2{
     text-align: center;
+    color:#eee;
 }
 .board {
     display:grid;

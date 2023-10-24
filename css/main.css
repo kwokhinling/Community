@@ -1,12 +1,14 @@
 body{
     opacity: 50%;
-    background-color: white;
+    background-color: #032546;
 }
 
 p,pre{
     text-align: center;
     margin-top: 2px;
     margin-bottom: 2px;
+    font-size: 30px;
+    
 }
 .wineglass {
     animation-name: pour;
@@ -14,6 +16,7 @@ p,pre{
     animation-delay: 2s;
     animation-fill-mode: forwards;
     animation-iteration-count: unset;
+    color:azure;
 }
 
 a {
@@ -21,69 +24,33 @@ a {
     position: relative;
     display: inline-block;
     text-decoration-line: overline;
+    color:azure;
   }
   
-  a::before,
-  a::after {
-   content: '';
-    position: absolute;
-    width: 100%;
-    left: 0;
-  }
-  a::before {
-    background-color: #54b3d6;
-    height: 2px;
-    bottom: 0;
-    transform-origin: 100% 50%;
-    transform: scaleX(0);
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-  }
-  a::after {
-    content: attr(data-replace);
-    height: 100%;
-    top: 0;
-    transform-origin: 100% 50%;
-    transform: translate3d(200%, 0, 0);
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-    color: #54b3d6;
-  }
-  
-  a:hover::before {
-    transform-origin: 0% 50%;
-    transform: scaleX(1);
-  }
-  a:hover::after {
-    transform: translate3d(0, 0, 0);
-  }
-  
-  a span {
-    display: inline-block;
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-  }
-  
-  a:hover span {
-    transform: translate3d(-200%, 0, 0);
-  }
-  
-  /* Presentational Styles */
-  body {
-    display: grid;
-    font-family: 'Poppins', sans-serif;
-    font-size: 27px;
-    line-height: 1.5;
-    height: 100vh;
-    place-items: center;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #18272F;
-    font-weight: 700;
-    vertical-align: top;
-  }
+
+   
 
 a :active{
     color:#E0E33B;
+}
+.liqu{
+    position: absolute;
+    top:260px;
+    left:450px ;
+    color:#D50001;
+}
+.container{
+    position: absolute;
+    top:260px;
+    left:450px ;
+    width: 50px;
+    height:1000px;
+    background-color: #032546;
+    animation-name: godown;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: unset;
 }
 @keyframes pour{
     from{
@@ -91,5 +58,13 @@ a :active{
     }
     to{
         transform: rotate(-60deg);
+    }
+}
+@keyframes godown{
+    from{
+        transform:none;
+    }
+    to{
+        translate:0px 500px;
     }
 }
