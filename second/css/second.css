@@ -10,7 +10,6 @@ h2{
     display:grid;
     place-items: center;
     
-    
 }
 .chess-board th { 
     padding: .5em; 
@@ -21,15 +20,18 @@ h2{
     height: 4em; 
 }
 .chess-board .light { 
-    background: #eee; 
-    color:#000;
+    background: #E9EDCC; 
+    
     text-align: center;
     
 }
 .chess-board .dark { 
-    background: #000; 
-    color:#eee ;
+    background: #769954; 
     text-align: center;
+}
+.white .light,.white .dark{
+    color:#eee;
+   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 a{
     display:inline-block;
@@ -108,12 +110,7 @@ p{
     from{
         transform:none;
     }
-    15%{
-        color: #eee; 
-    }
-    85%{
-        color:#000
-    }
+   
     to{
        transform:translateY(-134px);
     }
@@ -122,12 +119,7 @@ p{
     from{
         transform:none;
     }
-    15%{
-        color:#000
-    }
-    85%{
-       color: #eee; 
-    }
+   
     to{
         transform:translateY(134px);
     }
@@ -143,12 +135,12 @@ p{
 @keyframes fourthmove{
     from{
         transform:none ;
-        color:#eee;
+        
         
     }
     to{
         transform:translate(67px,130px) ;
-        color:#000;
+     
     }
 }
 @keyframes fifthmove{
@@ -162,11 +154,11 @@ p{
 @keyframes sixthmove{
     from{
         transform:none;
-        color:#000;
+       
     }
     to{
         transform:translate(-67px,130px);
-        color:#eee;
+       
     }
 }
 @keyframes seventhmove{
