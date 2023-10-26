@@ -1,14 +1,82 @@
+body{
+    animation-name: blackscreen;
+    animation-delay: 28s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: unset;
+}
 path{
     fill:transparent;
 }
-textpath a{
-    
+#test{
+    position:relative;
+}
+/*h1{
+    position:absolute;
+    left:30%;
+    top:5px;
+}*/
+#rabbit{
+    background-color: blueviolet;
     color: #a61d2f;
     display:inline-block;
 }
+.die{
+    opacity:0%;
+    color:#a61d2f;
+    position: fixed; 
+    top: 25%;
+    left: 30%;
+    font-size: 120px;
+    animation-name:death ;
+    animation-delay: 30s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: unset;
+}
+.die a{
+    text-decoration-line: none;
+}
+.die a:link{
+    color:#a61d2f;
+}
+.die a:visited{
+    color:#a61d2f;
+}
+.redeye{
+    position:absolute;
+    left:105%;
+    top: 10px;
+    color:#a61d2f;
+    animation-name:run;
+    animation-delay: 18s;
+    animation-duration: 10s;
+    animation-iteration-count: unset;
+}
+@keyframes run{
+    from{
 
-
-
+    }
+    to{
+        transform: translate(-2000px);
+    }
+}
+@keyframes blackscreen{
+    from{
+        background-color: #eee;
+    }
+    to{
+        background-color: black;
+    }
+}
+@keyframes death{
+    from{
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
 /*<div id="test2">
 <svg viewBox="0 0 500 500">
     
